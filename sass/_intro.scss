@@ -123,8 +123,6 @@ footer img {
 footer h1 h2 p {
     font-color: black;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -132,21 +130,22 @@ footer h1 h2 p {
     float: left;
     text-align: left;
     color: black;
-    width: 33.3%; 
+    width: 25.0%;
+    margin-left: 205px; 
 }
 
 #footer p:nth-child(2) {
     float: left;
     text-align: left;
     color: black;
-    width: 33.4%; 
+    width: 20.0%; 
 }
 
 #footer p:last-child {
     float: right;
     text-align: left;
     color: black;
-    width: 33.3%; 
+    width: 40.0%; 
 }
 
 
