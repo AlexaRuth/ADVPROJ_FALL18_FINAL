@@ -501,6 +501,10 @@ footer h1 h2 p {
   font-color: black;
   display: block; }
 
+footer h3 {
+  align-content: centr;
+  margin: auto; }
+
 #footer p:first-child {
   float: left;
   text-align: left;

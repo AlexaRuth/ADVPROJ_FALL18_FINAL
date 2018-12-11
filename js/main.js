@@ -1,5 +1,6 @@
-
 //LOGIN FORM
+//
+
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
@@ -98,13 +99,8 @@ $this
 
 
 
-// // Fix: Placeholder polyfill.
-// $form.placeholder();
-
-
-
-
-// Menu.
+// MENU
+//
 var $menu = $('#menu');
 
 $menu.wrapInner('<div class="inner"></div>');
@@ -198,5 +194,30 @@ $menu._hide();
 });
 
 });
+
+
+
+// GALLERY //
+
+$(document).ready(function(){
+  $('.your-class').slick({
+    setting-name: setting-value
+  });
+
+
+$('.fade').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+  
+});
+
+
+
+
+
 
 })(jQuery);
