@@ -1,0 +1,457 @@
+//MAIN STYLESHEET
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+/* FONT REFRENCE ONLY:: font-family: 'Montserrat', sans-serif; */
+@import 'vars';
+
+
+html{
+		-webkit-font-smoothing: antialiased;
+		}
+
+*{
+		box-sizing: border-box;
+		}
+
+
+/*BODY*/
+body{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
+		color: darkgrey;
+		border: solid white 5px;
+		margin: auto;
+   		background-color: #1349CD; /* For browsers that do not support gradients */
+   		background-image: linear-gradient(#2E364D,#1349CD, #0191FF,#01AFAE); /* Standard syntax (must be last) */
+
+		@include phablet{
+		    width: $small-width;
+		    } 
+
+		@include tablet{
+		    width: $med-width;
+		    }
+
+		@include desktop{
+		    width: $large-width;
+    		}
+
+        @include macpro{
+            width: $xlarge-width;
+            }
+
+	}
+
+
+/*ELEMENTS*/
+h1{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 6em;
+		margin:auto;
+		color: black;
+		}
+
+h2{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1em;
+		font-style: 700;
+		color: white;
+		}
+
+p{
+		font-family: 'Montserrat', sans-serif;
+		color: white;
+		font-style: 300;
+		font-size: 1em;
+		padding: 25px;
+		margin-bottom: 5px;
+		}
+
+a h1{
+		color: black;
+		}
+
+a h1:link {
+ 	text-decoration: none;
+		}
+
+a h1:visited {
+		color: lightgrey;
+		text-decoration: none;
+		}
+
+a h1:hover {
+		color: red;
+		text-decoration: none;
+		}
+
+img{
+		height: 25%;
+		}
+
+button {
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+
+/*
+FOOTER*/
+
+footer {
+    background-color: white;
+    align-content: center;
+    position: inherit;
+    margin:auto;
+    font-size: 12px;
+    padding: 20px;
+}
+
+footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+
+}
+
+
+footer h1 h2 p {
+    font-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#footer p:first-child {
+    float: left;
+    text-align: left;
+    color: black;
+    width: 33.3%; 
+}
+
+#footer p:nth-child(2) {
+    float: left;
+    text-align: left;
+    color: black;
+    width: 33.4%; 
+}
+
+#footer p:last-child {
+    float: right;
+    text-align: left;
+    color: black;
+    width: 33.3%; 
+}
+
+
+
+/*
+INTRO SECTION*/
+
+#intro{	 
+		height:600px;
+	 	max-width: 100%;
+		background-color: #2E364D;
+		border-bottom-right-radius: 100px;
+
+        @include phablet{
+            width: $small-width;
+            } 
+
+        @include tablet{
+            width: $med-width;
+            height:800px;
+            max-width: 100%;
+            border-bottom-right-radius: 200px;
+            }
+
+        @include desktop{
+            width: $large-width;
+            height:900px;
+            max-width: 100%;
+            border-bottom-right-radius: 600px;
+            } 
+
+		}
+
+
+.mockphone img{
+		height: 550px;
+		width: auto;
+        margin: auto;
+		position: absolute;
+        top: 475px;
+
+		@include phablet{
+			width: $small-width;
+			} 
+
+		@include tablet{
+			width: $med-width;
+			height: 600px;
+            width: auto;
+			top: 300px;
+			}
+
+		@include desktop{
+			width: $large-width;
+			height: 800px;
+            width: auto;
+			top: 150px;
+            right: 400px;
+			} 
+		}
+
+
+#info1 h2 {
+		padding: 3px;
+		font-size: 2em;
+		text-align: center;
+		line-height: 1em;
+		position: absolute;
+		top: 250px;
+		left: 40px;
+		z-index: 1px;
+		max-width: 350px;
+
+        @include phablet{
+            width: $small-width;
+            } 
+
+        @include tablet{
+            width: $med-width;
+            padding: 3px;
+            font-size: 2.75em;
+            text-align: left;
+            line-height: 1.25em;
+            position: absolute;
+            top: 275px;
+            left: 100px;
+            z-index: 1px;
+            max-width: 500px;
+            }
+
+        @include desktop{
+            width: $large-width;
+            padding: 3px;
+            font-size: 3em;
+            text-align: left;
+            line-height: 1.25em;
+            position: absolute;
+            top: 300px;
+            left:150px;
+            z-index: 1px;
+            max-width: 600px;
+            } 
+	}
+
+#info1 p {
+		padding: 3px;
+		font-size: 1em;
+		text-align: center;
+		line-height: 1em;
+		position: absolute;
+		top: 350px;
+		left:50px;
+        margin: auto;
+		z-index: 1px;
+		max-width: 300px;
+
+
+        @include phablet{
+            width: $small-width;
+            } 
+
+        @include tablet{
+            width: $med-width;
+
+            }
+
+        @include desktop{
+        width: $large-width;
+        padding: 3px;
+        font-size: 1em;
+        text-align: center;
+        line-height: 3em;
+        position: absolute;
+        top: 430px;
+        left:150px;
+        z-index: 1px;
+        max-width: 500px;
+            } 
+	}
+
+
+/* SIGN UP FORM */
+#signup{
+        z-index: 2px;
+        position: absolute;
+        top: 400px;
+        left: 150px;
+
+        @include phablet{
+            width: $small-width;
+            } 
+
+        @include tablet{
+            z-index: 2px;
+            position: absolute;
+            top: 500px;
+            left: 150px;
+            }
+
+        @include desktop{
+            z-index: 2px;
+            position: absolute;
+            top: 500px;
+            left: 150px;
+            }
+        }
+
+#signup h1{
+        color:grey;
+        font-size: 50px;
+        font-style: 500;
+        margin-left: 20px;
+        margin-top: 20px;
+        }
+
+.container h2{
+        color:grey;
+        font-size: 16px;
+        font-style: 300;
+        }
+
+#signup p{
+        color:dimgrey;
+        }
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        }
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+        }
+
+button:hover {
+        opacity:3;
+        }
+
+/* Extra styles for the cancel button */
+.signupbtn {
+        padding: 14px 20px;
+        background-color: green;        
+        }
+
+/* Extra styles for the cancel button */
+.cancelbtn{
+        padding: 14px 20px;
+        background-color: red;
+        }
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+        float: left;
+        width: 50%;
+        }
+
+/* Set a style for all buttons */
+#signup button {
+        // background-color: *;
+        color: white;
+        padding: 14px 20px;
+        border-radius: 10px;
+        margin: 8px 0;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        }
+
+#signup .main_button button {
+        background-color: lightblue;
+        color: black;
+        }
+
+/* Add padding to container elements */
+.container {
+        padding: 16px;
+        }
+
+/* The Modal (background) */
+.modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background: #ffffff url("../images/agriculture-basket-beets_2.jpg") fill;
+        padding-top: 50px;
+        }
+
+/* Modal Content/Box */
+.modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        border-radius: 10px;
+        width: 75%; /* Could be more or less, depending on screen size */
+        }
+
+/* Style the horizontal ruler */
+hr{
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+        }
+
+/* The Close Button (x) */
+.close {
+        position: absolute;
+        right: 35px;
+        top: 15px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #f1f1f1;
+        }
+
+.close:hover,
+.close:focus {
+        color: red;
+        cursor: pointer;
+        }
+
+/* Clear floats */
+.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+        .cancelbtn, .signupbtn{
+        width: 100%;}
+    }
+
+
+
+
+

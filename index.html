@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang "en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<!--STYLES-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/ssadd/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ssadd/bootstrap-grid.min.css">
+		<link rel="stylesheet" type="text/css" href="css/ssadd/bootstrap-reboot.min.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!--CUSTOM STYLES-->
+		<link rel="stylesheet" type="text/css" href="css/_css.css">
+		
+		
+		
+		<!--TITLE-->
+		<title> MCAD ADVPROJ FALL18</title>
+		<!--SCRIPTS-->
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		
+	</head>
+	<body>
+		<!--NAVIGATION-->
+		<ul class="topnav">
+			<li><a class="active" href="index.html">pabulum</a></li>
+			<li><a href="pages/facts.html">facts</a></li>
+			<li><a href="pages/blog.html">blog</a></li>
+			<li><a href="#!">contact</a></li>
+			
+		</ul>
+		
+		<button class="open-button" onclick="openForm()">login</button>
+		<div class="form-popup" id="myForm">
+			<form action="/action_page.php" class="form-container">
+				<h1>Login</h1>
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+				<button type="submit" class="btn">Login</button>
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+		</div>
+		<!-- LANDING PAGE CONTENT -->
+		
+		<section id="intro">
+			
+			<div class="mockphone">
+				<a href="#!"><img src="images/iphone.png"></a>
+			</div>
+			
+			<div id="info1">
+				<h2>Listening to your gut just got easier!</h2>
+				<p> Welcome to a whole new way to track your health.</p>
+			</div>
+			
+		</section>
+		
+		
+		
+		<section id="signup">
+			
+			<div class="main_button">
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="signupbtn1">Sign Up</button>
+			</div>
+			<div id="id01" class="modal">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				
+				
+				<form class="modal-content">
+					<!-- <form class="modal-content" action="/action_page.php"> -->
+					<div class="container">
+						<h1>Sign Up</h1>
+						<p>Please fill in this form to create an account.</p>
+						<hr>
+						<label for="email"><h2>Email</h2></label>
+						<input type="text" placeholder="Enter Email" name="email" required>
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						<label for="psw-repeat"><b>Repeat Password</b></label>
+						<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+						
+						<label>
+							<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+						</label>
+						<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &amp; Privacy</a>.</p>
+						<div class="clearfix">
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+							<button type="submit" class="signupbtn">Sign Up</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		
+		<!-- FEATURES -->
+		<section id="feature_flip">
+			<section class="fliptiles">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<h1>Food Tracking</h1>
+							<!--    <img src="images/foods.png" width=20% alt="food track"style="width:300px;height:300px;"> -->
+						</div>
+						<div class="flip-card-back">
+							<h1>Food Tracking</h1>
+							<img src="images/foods.png" width=20% alt="food track"style="width:50px;height:50px;">
+							<!-- <a href="https://cloud.google.com/vision/"> -->
+							<p>Life is short, Pabulum makes tracking food easy and simple. No measuring, No sifting through thousands of recipes, simply enter whole ingridients or scan your plate. Using FOOD API technology the future of daily logging is in your hands.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="images/greybox.jpg" alt="Avatar" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>John Doe</h1>
+						<p>Architect & Engineer</p>
+						<p>We love that guy</p>
+					</div>
+				</div>
+			</div>
+			<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="images/greybox.jpg" alt="Avatar" style="width:300px;height:300px;">
+					</div>
+					<div class="flip-card-back">
+						<h1>John Doe</h1>
+						<p>Architect & Engineer</p>
+						<p>We love that guy</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section id="features">
+		<section class="tiles">
+			<!-- EASY FOOD TRACKING -->
+			
+			<article class="style4">
+				<span class="image">
+					<img src="images/greybox.jpg" alt="food track" />
+				</span>
+				<a href="https://cloud.google.com/vision/">
+					<h2>FOOD TRACKING</h2>
+					<div class="content">
+						<img src="images/foods.png" width=20% alt="food track" />
+						<p>Life is short, Pabulum makes tracking food easy and simple. No measuring, No sifting through thousands of recipes, simply enter whole ingridients or scan your plate. Using FOOD API technology the future of daily logging is in your hands.</p>
+						<!--<p>TEXT HERE</p>-->
+					</div>
+				</a>
+			</article>
+			<!-- DAILY REMINDERS TO TRACK-->
+			
+			<!-- <article class="style4">
+					<span class="image">
+							<img src="images/greybox.jpg" alt="symptoms" />
+					</span>
+					<a href="#!">
+							<h2>SYMPTOMS AND ANALYSIS</h2>
+							<div class="content">
+									<img src="images/symp.png" width=20% alt="food track" />
+									<p>Clean simple and easy graphs, that allow you to sort through specific periods of time. All of your progress is available for download and can be instantly shared with your medical professional.</p>
+							</div>
+					</a>
+			</article> -->
+			
+			<!--MEDICAL DEVICE SYNC -->
+			<!-- <article class="style4">
+					<span class="image">
+							<img src="images/orangebox.jpg" alt="orange box" />
+					</span>
+					<a href="https://endpoints.elysiumhealth.com/next-generation-wearables-2018-b0c8be461151">
+							<h2>MEDICAL DEVICE SYNC</h2>
+							<div class="content">
+									<p>Syncing to your device is a critical step in helping inform you and providing you the most accurate information. </p>
+							</div>
+					</a>
+			</article> -->
+			
+			
+			<!-- SYMPTOM & MOOD LOG -->
+			<!--
+			<article class="style4">
+					<span class="image">
+							<img src="images/greybox.jpg" alt="moods" />
+					</span>
+					<a href="https://www.healthline.com/health/mood-food-can-what-you-eat-affect-your-happiness">
+							<h2>MOOD TRACKING</h2>
+							<div class="content">
+									<img src="images/mood1.png" width=20% alt="food track" />
+									<p>Have you ever considered which eating habits and specific foods might help you to feel happier and more energized? Recent research helps illuminate the role food plays in influencing your mood. </p>
+									<p>TEXT HERE</p>
+							</div>
+					</a>
+			</article> -->
+			
+			
+			<!-- MOOD TRACKING -->
+			
+			<article class="style4">
+				<span class="image">
+					<img src="images/orangebox.jpg" alt="orange box" />
+				</span>
+				<a href="#!">
+					<h2>DAILY REMINDER</h2>
+					<div class="content">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam eget nisl. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. </p>
+						<!--<p>TEXT HERE</p>-->
+					</div>
+				</a>
+			</article>
+			
+			<!-- SLEEP TRACKING -->
+			
+			<article class="style4">
+				<span class="image">
+					<img src="images/orangebox.jpg" alt="orange box" />
+				</span>
+				<a href="https://www.sharecare.com/health/health-apps-and-wearables/why-should-track-sleep">
+					<h2>SLEEP TRACKING</h2>
+					<div class="content">
+						<p>The most important reason to track your sleep is that sleep is good for your health, so you need to be sure you're getting enough of it. It reduces your risk of diabetes and heart problems. Improves your concentration, reaction time and memory.</p>
+						<!--<p>TEXT HERE</p>-->
+					</div>
+				</a>
+			</article>
+			
+		</section>
+	</section>
+	
+	
+	<footer>
+		<section>
+			<a href="#!"><img src="images/heart.png"></a>
+		</section>
+		<!-- <h1>PABULUM APP</h1> -->
+		<div id="footer">
+			<p>LEARN MORE<br /> About Pabulum<br /> Health Education</p>
+			<p>CONNECT<br /> Blog<br /> Instagram</p>
+			<p>HELP<br /> Facts<br /> Contact</p>
+		</div>
+		
+		
+		<p>ALEX KUSICK | PABULUM <br> Terms of Services &amp; Privacy </p>
+	</footer>
+	
+	
+	<!-- Scripts -->
+	<script src="js/bs_add/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	
+</body>
+</html>

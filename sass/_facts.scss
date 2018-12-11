@@ -1,0 +1,113 @@
+/*****
+FACTS LAYOUT
+****/
+
+
+.symptom{
+    margin:auto;
+    background-color: white;
+    width: 1020px;
+    padding: 100px;
+}
+
+.title{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 50px;
+}
+
+.symptom p{
+    color: grey;
+}
+
+
+
+/*****
+BLOG LAYOUT
+****/
+
+.blogpart{
+    // background-color: lightgrey;
+    align-content: center;
+}
+
+.blogpart .mockcard h1 h2 p{
+    // color: grey;
+    margin: auto;
+}
+
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+.header h2{
+    color: white;
+}
+
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.mockimg{
+    background-color: grey;
+    width: 80%;
+    margin:auto;
+    padding: 5px;
+}
+
+.mockcard {
+     background-color: white;
+     padding: 50px;
+     margin-top: 20px;
+     margin-left: 150px;
+     margin-bottom: 75px;
+     color:grey;
+     // border: solid 5px lightgrey;
+     // border-radius: 5px;
+}
+
+.mockcard h2 a{
+    color: black;
+    font-size: 32px;
+    font-style: 700;
+}
+
+.mockcard h5{
+    color: lightgrey;
+    font-size: 18px;
+    
+}
+
+.mockcard p{
+    color: grey;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
+
+
+

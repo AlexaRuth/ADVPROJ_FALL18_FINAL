@@ -1,0 +1,61 @@
+//Colors
+$darkblue: #2E364D;
+$skygreen: #45B39D;
+$menugreen: #48C9B0;
+$rust:    #c74438;
+$darkgreen: #0E6655;
+$mint:  #EAFAF1;
+$white:   #fff;
+$grey:    #aaa;
+$greymed: #A9A9A9;
+$darkgrey: #696969;
+$black:   #111;
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+$copy-font:   'Montserrat', sans-serif;
+$header-font: 'Montserrat', sans-serif;
+
+//Paragraph Widths
+
+$small-width: 420px;
+$med-width: 650px;
+$large-width: 960px;
+$xlarge-width: 100%;
+
+//Line Heights
+$line-height1: 1.75px;
+$line-height2: 1.50px;
+$line-height3: 1.25px;
+$line-height4: 1px;
+
+//Media Queries
+
+$phablet-width: "screen and (min-width:480px)";
+$tablet-width: "screen and (min-width:640px)";
+$desktop-width: "screen and (min-width:820px)";
+$macpro-width: "screen and (min-width:1200px)";
+
+@mixin phablet{
+    @media #{$phablet-width}{
+    @content;
+    }
+}
+
+@mixin tablet{
+    @media #{$tablet-width}{
+    @content;
+    }
+}
+
+@mixin desktop{
+    @media #{$desktop-width}{
+    @content;
+    }
+}
+
+@mixin macpro{
+    @media #{$desktop-width}{
+    @content;
+    }
+}
