@@ -862,7 +862,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .tiles article > .image img {
   display: block;
-  width: 100%;
+  width: 70%;
   margin: auto; }
 
 .tiles article > .image:before {
@@ -918,15 +918,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .tiles article > a .content > :last-child {
   margin-bottom: 0; }
 
-.tiles article.style4 > .image:before {
-  background-color: darkblue; }
-
 body:not(.is-touch) .tiles article:hover > .image {
   transform: scale(1.1); }
 
 body:not(.is-touch) .tiles article:hover > .image:before {
   background-color: black;
-  opacity: 0.35; }
+  opacity: .75; }
 
 body:not(.is-touch) .tiles article:hover > .image:after {
   opacity: 0; }

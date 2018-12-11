@@ -99,8 +99,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 .tiles article > .image img {
     display: block;
-    width: 100%;
-				margin: auto;
+    width: 70%;
+	margin: auto;
     }
 
 .tiles article > .image:before {
@@ -163,9 +163,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-bottom: 0;
     }
 
-.tiles article.style4 > .image:before {
-    background-color: darkblue;
-    }
+// .tiles article.style4 > .image:before {
+    // background-color: darkblue;}
 
 
 body:not(.is-touch) .tiles article:hover > .image {
@@ -174,7 +173,7 @@ body:not(.is-touch) .tiles article:hover > .image {
 
 body:not(.is-touch) .tiles article:hover > .image:before {
     background-color: black;
-    opacity: 0.35;
+    opacity: .75; //This changes the after color on the hover
     }
 
 body:not(.is-touch) .tiles article:hover > .image:after {
